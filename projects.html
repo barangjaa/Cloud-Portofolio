@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects & Analytics | M. Sidiq Maulana</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Overlay & Game-style Sidebar -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-tag">// NAVIGATION_MENU</span>
+            <button id="close-sidebar" class="close-btn">&times;</button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="index.html" class="sidebar-link">
+                <span class="link-num">01</span>
+                <div class="link-text">
+                    <strong>Overview & CV</strong>
+                    <small>Ringkasan profil, karir & edukasi</small>
+                </div>
+            </a>
+            <a href="projects.html" class="sidebar-link active">
+                <span class="link-num">02</span>
+                <div class="link-text">
+                    <strong>Projects & Analytics</strong>
+                    <small>Arsip lengkap, grafik & spesifikasi</small>
+                </div>
+            </a>
+            <a href="index.html#experience" class="sidebar-link">
+                <span class="link-num">03</span>
+                <div class="link-text">
+                    <strong>Experience</strong>
+                    <small>Riwayat kerja & magang</small>
+                </div>
+            </a>
+            <a href="index.html#education" class="sidebar-link">
+                <span class="link-num">04</span>
+                <div class="link-text">
+                    <strong>Education</strong>
+                    <small>Akademik & keahlian teknis</small>
+                </div>
+            </a>
+        </nav>
+        <div class="sidebar-footer">
+            <span>Press <kbd>Tab</kbd> to toggle menu</span>
+        </div>
+    </aside>
+
+    <div class="container">
+        <!-- Top Navbar -->
+        <header class="navbar">
+            <div class="nav-left">
+                <button id="menu-trigger" class="menu-btn" title="Toggle Menu (Tab)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="index.html" class="brand-name">Sidiq Maulana<span class="dot">.</span></a>
+            </div>
+            <nav class="top-nav">
+                <a href="index.html" class="nav-link">Overview</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="index.html#experience" class="nav-link">Experience</a>
+                <a href="index.html#education" class="nav-link">Education</a>
+            </nav>
+        </header>
+
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1 class="page-title">Project Archive & Telemetry</h1>
+            <p class="page-subtitle">Dokumentasi teknis, distribusi bidang pengembangan, dan rincian arsitektur proyek yang pernah dikerjakan.</p>
+        </section>
+
+        <!-- Visual Analytics / Grafik & Statistik -->
+        <section class="analytics-grid">
+            <!-- Grafik Bar Distribusi Fokus/Skill -->
+            <div class="analytics-card">
+                <h3 class="panel-title">Development Focus & Stack Proficiency</h3>
+                <div class="chart-container">
+                    <div class="bar-item">
+                        <div class="bar-label">
+                            <span>C# / Unity Game Engine</span>
+                            <span class="bar-val">88%</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill" style="width: 88%;"></div></div>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar-label">
+                            <span>Android / Core Logic Architecture</span>
+                            <span class="bar-val">85%</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar-label">
+                            <span>Linux SysAdmin / Bash / Cloud Prep</span>
+                            <span class="bar-val">78%</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill" style="width: 78%;"></div></div>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar-label">
+                            <span>Python / Data & SEM-PLS Analysis</span>
+                            <span class="bar-val">75%</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill" style="width: 75%;"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kartu Metrik Ringkas -->
+            <div class="metrics-column">
+                <div class="metric-box">
+                    <span class="metric-value">90%</span>
+                    <span class="metric-label">Rata-rata porsi pengerjaan Core Engine pada proyek tim</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-value">4+</span>
+                    <span class="metric-label">Domain Teknis (Mobile, Game, Cloud/Linux, Data)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Spesifik Berdasarkan Bidang -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">All Projects Directory</h2>
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all">All Domains</button>
+                    <button class="filter-btn" data-filter="software">Mobile & Software</button>
+                    <button class="filter-btn" data-filter="cloud">Cloud & SysAdmin</button>
+                    <button class="filter-btn" data-filter="game">Game Dev & 3D</button>
+                    <button class="filter-btn" data-filter="data">Data & Research</button>
+                </div>
+            </div>
+
+            <div class="projects-grid detailed-grid">
+                <!-- Project 1 -->
+                <div class="card project-card" data-category="software">
+                    <div class="card-top">
+                        <span class="card-badge">Mobile Application</span>
+                        <span class="card-year">Jan 2026</span>
+                    </div>
+                    <h3 class="card-title">QuickSOS - Personal Safety App</h3>
+                    <p class="card-desc">Aplikasi keamanan darurat Android yang dipresentasikan ke dosen fakultas. Bertanggung jawab penuh membangun 90% mesin utama (core engine) dan integrasi sistem, sementara anggota tim lainnya menangani UI dan riwayat lokasi.</p>
+                    <div class="card-tech">
+                        <span>Android Studio</span>
+                        <span>Java/Kotlin</span>
+                        <span>System Engine</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card project-card" data-category="game">
+                    <div class="card-top">
+                        <span class="card-badge">3D Game Dev</span>
+                        <span class="card-year">Okt 2026</span>
+                    </div>
+                    <h3 class="card-title">3D Turn-Based Chopsticks Roguelite</h3>
+                    <p class="card-desc">Game kartu 3D roguelite yang diadaptasi dari permainan jari tradisional. Mengimplementasikan skrip C# khusus (seperti HandDragAttack) untuk mekanik drag tangan dan logika serangan antar jari.</p>
+                    <div class="card-tech">
+                        <span>Unity 3D</span>
+                        <span>C#</span>
+                        <span>Blender 3D</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card project-card" data-category="cloud">
+                    <div class="card-top">
+                        <span class="card-badge">Infrastructure</span>
+                        <span class="card-year">Nov 2026</span>
+                    </div>
+                    <h3 class="card-title">Linux & Cloud DevOps Environment</h3>
+                    <p class="card-desc">Proyek lab mandiri untuk transisi karir Cloud Engineering. Meliputi automasi menggunakan Bash scripting, manajemen jaringan virtual, dan administrasi sistem operasi berbasis Linux.</p>
+                    <div class="card-tech">
+                        <span>Linux</span>
+                        <span>Bash Scripting</span>
+                        <span>VirtualBox</span>
+                        <span>Networking</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="card project-card" data-category="game">
+                    <div class="card-top">
+                        <span class="card-badge">2D Arcade</span>
+                        <span class="card-year">2025 - 2026</span>
+                    </div>
+                    <h3 class="card-title">M-Shooter (Math Arcade Shooter)</h3>
+                    <p class="card-desc">Game edukasi tembak-menembak 2D dengan sistem penguncian target (target-locking crosshair) dinamis dan pembuatan seluruh aset visual menggunakan teknik pixel art.</p>
+                    <div class="card-tech">
+                        <span>Unity 2D</span>
+                        <span>C#</span>
+                        <span>Pixel Art</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="card project-card" data-category="data">
+                    <div class="card-top">
+                        <span class="card-badge">Quantitative Research</span>
+                        <span class="card-year">Okt - Nov 2026</span>
+                    </div>
+                    <h3 class="card-title">SEM-PLS Cognitive & Gaming Study</h3>
+                    <p class="card-desc">Riset grup universitas mengenai dampak durasi bermain game kompetitif terhadap konsentrasi belajar praktikum mahasiswa FTEN ITPLN. Mencakup automasi pengolahan data Python dan pemodelan di SmartPLS 4.</p>
+                    <div class="card-tech">
+                        <span>Python</span>
+                        <span>SmartPLS 4</span>
+                        <span>Statistical Modeling</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="shortcuts">
+                <span><kbd>Tab</kbd> toggle sidebar</span>
+                <span><kbd>Esc</kbd> back to top</span>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">&larr; Back to Overview</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

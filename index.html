@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Sidiq Maulana | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Overlay & Game-style Sidebar -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-tag">// NAVIGATION_MENU</span>
+            <button id="close-sidebar" class="close-btn">&times;</button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="index.html" class="sidebar-link active">
+                <span class="link-num">01</span>
+                <div class="link-text">
+                    <strong>Overview & CV</strong>
+                    <small>Ringkasan profil, karir & edukasi</small>
+                </div>
+            </a>
+            <a href="projects.html" class="sidebar-link">
+                <span class="link-num">02</span>
+                <div class="link-text">
+                    <strong>Projects & Analytics</strong>
+                    <small>Arsip lengkap, grafik & spesifikasi</small>
+                </div>
+            </a>
+            <a href="#experience" class="sidebar-link">
+                <span class="link-num">03</span>
+                <div class="link-text">
+                    <strong>Experience</strong>
+                    <small>Riwayat kerja & magang</small>
+                </div>
+            </a>
+            <a href="#education" class="sidebar-link">
+                <span class="link-num">04</span>
+                <div class="link-text">
+                    <strong>Education</strong>
+                    <small>Akademik & keahlian teknis</small>
+                </div>
+            </a>
+        </nav>
+        <div class="sidebar-footer">
+            <span>Press <kbd>Tab</kbd> to toggle menu</span>
+        </div>
+    </aside>
+
+    <div class="container">
+        <!-- Top Navbar -->
+        <header class="navbar">
+            <div class="nav-left">
+                <button id="menu-trigger" class="menu-btn" title="Toggle Menu (Tab)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="index.html" class="brand-name">barangjaa<span class="dot">.</span></a>
+            </div>
+            <nav class="top-nav">
+                <a href="index.html" class="nav-link active">Overview</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="status-pill">
+                <span class="pulse-dot"></span> Available for Cloud, DevOps & Software Projects
+            </div>
+            <h1 class="hero-title">M. Sidiq Maulana</h1>
+            <div class="typing-container">
+                <span id="typed-text"></span><span class="cursor">|</span>
+            </div>
+            <p class="hero-bio">
+                Mahasiswa Teknik Informatika di ITPLN yang berfokus pada pengembangan perangkat lunak, arsitektur aplikasi, game development, serta infrastruktur Cloud & Linux. Terbiasa membangun logika sistem dari nol.
+            </p>
+            <div class="hero-actions">
+                <a href="projects.html" class="btn-primary">Explore Projects &rarr;</a>
+                <a href="#" class="btn-secondary">Download CV</a>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section (General Filter) -->
+        <section class="section">
+            <div class="section-header">
+                <a href="projects.html" class="section-title-link" title="Klik untuk ke halaman penuh Projects">
+                    <h2 class="section-title">Featured Projects <span class="arrow-icon">↗</span></h2>
+                </a>
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="featured">Featured</button>
+                    <button class="filter-btn" data-filter="recent">Recents</button>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="card project-card" data-category="featured">
+                    <div class="card-top">
+                        <span class="card-badge">Featured</span>
+                        <span class="card-year">2026</span>
+                    </div>
+                    <h3 class="card-title">QuickSOS</h3>
+                    <p class="card-desc">Aplikasi keamanan darurat Android. Merancang 90% core engine dan sistem logika utama aplikasi.</p>
+                    <div class="card-tech">
+                        <span>Android Studio</span>
+                        <span>Core Logic</span>
+                    </div>
+                </div>
+
+                <div class="card project-card" data-category="recent">
+                    <div class="card-top">
+                        <span class="card-badge">Recent</span>
+                        <span class="card-year">2026</span>
+                    </div>
+                    <h3 class="card-title">Cloud & Linux Lab</h3>
+                    <p class="card-desc">Eksplorasi administrasi sistem Linux, bash scripting, dan konfigurasi jaringan untuk kesiapan infrastruktur Cloud.</p>
+                    <div class="card-tech">
+                        <span>Linux</span>
+                        <span>Bash</span>
+                        <span>Networking</span>
+                    </div>
+                </div>
+
+                <div class="card project-card" data-category="recent">
+                    <div class="card-top">
+                        <span class="card-badge">Recent</span>
+                        <span class="card-year">2026</span>
+                    </div>
+                    <h3 class="card-title">Chopsticks 3D Roguelite</h3>
+                    <p class="card-desc">Game kartu 3D turn-based dengan mekanik drag-and-attack interaktif menggunakan C# di Unity.</p>
+                    <div class="card-tech">
+                        <span>Unity 3D</span>
+                        <span>C#</span>
+                        <span>Blender</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all-wrapper">
+                <a href="projects.html" class="view-all-link">Lihat seluruh arsip & statistik proyek di halaman Projects &rarr;</a>
+            </div>
+        </section>
+
+        <!-- Experience & Education -->
+        <div class="dual-section">
+            <section id="experience" class="section">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-date">2025 - Sekarang</span>
+                        <h3 class="timeline-role">Independent Software & Game Dev</h3>
+                        <p class="timeline-place">Academic & Personal Projects</p>
+                        <p class="timeline-desc">Membangun aplikasi mobile, game 2D/3D di Unity, serta otomasi pengolahan data riset.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-date">2023 (6 Bulan)</span>
+                        <h3 class="timeline-role">Field Support Intern</h3>
+                        <p class="timeline-place">PT PLN (Persero) ULP Lambung Mangkurat</p>
+                        <p class="timeline-desc">Pemeliharaan jaringan distribusi listrik, instalasi sistem grounding, dan troubleshooting teknis di lapangan.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education" class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-date">2024 - Sekarang</span>
+                        <h3 class="timeline-role">S1 Teknik Informatika</h3>
+                        <p class="timeline-place">Institut Teknologi PLN (ITPLN)</p>
+                        <p class="timeline-desc">Fokus pada rekayasa perangkat lunak, pemrograman sistem, dan infrastruktur jaringan/cloud.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-date">Lulus 2024</span>
+                        <h3 class="timeline-role">Teknik Instalasi Tenaga Listrik</h3>
+                        <p class="timeline-place">Sekolah Menengah Kejuruan (SMK)</p>
+                        <p class="timeline-desc">Fondasi kelistrikan, instalasi sistem daya, dan pemeliharaan perangkat keras.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="shortcuts">
+                <span><kbd>Tab</kbd> toggle sidebar</span>
+                <span><kbd>Esc</kbd> back to top</span>
+            </div>
+            <div class="footer-links">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">YouTube</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
